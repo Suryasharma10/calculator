@@ -6,17 +6,19 @@
 }
 body{
     height: 100vh;
-    width: 100%;
+    width: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(45deg, #0e0d0d, #414a56);
-    padding: 5%;
+    background-color: #2a2a2b;
 }
 .calculator{
     border: 1px solid #717377;
     padding: 1rem;
-    border-radius: 0.8rem;
+    border-radius: 3%;
+    margin-top: 40%;
+    height: 120vh;
+    width: 80%;
     background: transparent;
     box-shadow: 0px 3px 15px rgba(113,115,119,0.5);
     display: flex;
@@ -28,10 +30,11 @@ body{
 input{
     background: transparent;
     border: none;
-    padding: 0.4rem;
-    margin: 0.3rem;
-    height: 4.5rem;
-    font-size: 2rem;
+    padding: 3%;
+    margin: 5%;
+    height: 15%;
+    font-size: 4rem;
+    width: 95%;
     color: #fff;
     text-align: right;
     cursor: pointer;
@@ -41,16 +44,16 @@ input::placeholder{
     color: #fff;
 }
 button{
-    width: 4.3rem;
-    height: 4.3rem ;
-    margin: 0.9rem;
+    width: 14vh;
+    height: 14vh;
+    margin: 2vh;
     border-radius: 50%;
     border: none;
-    box-shadow: -8px -8px 15px rgba(13, 13, 14, 0.7);
+    box-shadow: -1rem -1rem 2rem rgba(13, 13, 14, 0.7);
     background: transparent;
     color: #fff;
-    font-weight: 900;
-    font-size: 1.4rem;
+    font-weight: bolder;
+    font-size: 1.8rem;
     cursor: pointer;
 }
 button:hover{
