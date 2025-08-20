@@ -1,68 +1,70 @@
 *{
     margin: 0%;
     padding: 0%;
-    box-sizing: border-box;
-    font-family: poppins, sans-serif;
+    font-family: pop-ins, sans-serif;
+
 }
 body{
     height: 100vh;
     width: 100vh;
+    background: linear-gradient(to bottom, #4f342d, #252144);
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #2a2a2b;
+    background-size: cover;
+    background-attachment: fixed;
+    overflow: auto;
 }
 .calculator{
-    border: 1px solid #717377;
-    padding: 1rem;
-    border-radius: 3%;
-    margin-top: 40%;
-    height: 120vh;
-    width: 80%;
+    height: 70vh;
+    width: 50vh;
+    border: 0.2vh solid #0e0303;
     background: transparent;
-    box-shadow: 0px 3px 15px rgba(113,115,119,0.5);
+    border-radius: 2vh;
+    box-shadow: 1vh 1vh 3vh rgba(18, 11, 11, 0.5);
+    padding: 1vh;
     display: flex;
-    justify-content:space-between;
-    align-items: center;
+    justify-content: center;
     flex-direction: column;
 }
-
-input{
+.calculator input{
+    text-align: right;
     background: transparent;
     border: none;
-    padding: 3%;
-    margin: 5%;
-    height: 15%;
-    font-size: 4rem;
+    box-shadow: 1vh 1vh 4vh rgba(8, 5, 5, 0.5);
+    height: 8vh;
     width: 95%;
-    color: #fff;
-    text-align: right;
-    cursor: pointer;
-    box-shadow: 0px 3px 15px rgba(73, 74, 76, 0.5);
-}
-input::placeholder{
-    color: #fff;
+    color:white;
+    padding: 1vh;
+    font-size: 5vh;
+    font-weight: bolder;
+    border-radius: 1vh;
+    margin-bottom: 2vh;
 }
 button{
-    width: 14vh;
-    height: 14vh;
-    margin: 2vh;
+    height: 9vh;
+    width: 10vh;
     border-radius: 50%;
-    border: none;
-    box-shadow: -1rem -1rem 2rem rgba(13, 13, 14, 0.7);
     background: transparent;
-    color: #fff;
+    border: none;
+    color: white;
+    font-size: 3.5vh;
     font-weight: bolder;
-    font-size: 1.8rem;
-    cursor: pointer;
+    margin: 1vh;
+    box-shadow: 1vh 1vh 4vh rgba(8, 5, 5, 0.5);
+    transition: all 0.2s ease-in-out;
 }
 button:hover{
-    box-shadow: 5px 5px 10px rgba(0, 10, 0, 0.3);
-    background-color: rgb(110, 110, 110);
-}
-.equal{
-    background-color: rgb(136, 195, 47);
+    background: rgba(255, 255, 255, 0.1);
+    transform: scale(1.1);
 }
 .operator{
-    background-color: rgb(163, 121, 43);
+    background-color: rgba(164, 81, 162, 0.438);
+    color: white;
+    font-size: 4vh;
+}
+.equal{
+    background-color: rgba(79, 222, 79, 0.471);
+    color: white;
+    font-size: 5vh;
 }
